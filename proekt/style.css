@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+body{
+    background-color: rgb(20, 20, 20);
+}
+.Header,li,ul{
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 15,
+      "SHLN" 50;
+    }
+.pered{
+    margin-bottom:30px ;
+}
+.posle{
+    margin-top: 50px;
+}
+.Header{
+    display: inline-flex;
+    list-style-type: none;
+    flex-flow: row nowrap;
+}
+.logo{
+    position: absolute;
+    width:140px;
+    height:110px;
+}
+video{
+    width: 100%;
+}
+ul{
+    display: inline-flex;
+    flex-flow: nowrap row;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 300px;
+}
+li{
+    padding-top:30px;
+    font-size: 50px;
+    margin-right: 20px;
+
+}
+.navigate{
+    display:flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+}
+a{
+    text-decoration: none;
+}
+#img1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+  }
+  textarea {
+    display: block;
+    border: 1px solid #BBB;
+    color: #444;
+    font-size: 110%;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+
+
+  .effect{
+      display: block;
+      padding-bottom: 10px;
+  }
+  .effect{
+      position: absolute;
+      color:#3e3e3e;
+      font-size: 70px;
+      font-weight: bold;
+      size: 100px;
+  }
+  .effect::before{
+      content: attr(content);
+      width: 0;
+      position: absolute;
+      color: #bac7ff;
+      filter:drop-shadow(0 0 20px #2641ff) drop-shadow(0 0 20px #2641ff);
+      border-right: 2px solid #ffffff;
+      animation: move 5s linear forwards 2s;
+      overflow: hidden;
+      white-space: nowrap;
+  }
+@keyframes move{
+    0%{
+        width:0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+
+.hidit{
+    visibility: hidden;
+}
+
+.vl{
+    border-left: 6px solid wheat;
+    height: 100;
+    left: 280px;
+}
+
+.start{
+    padding-left: 290px;
+    color: aliceblue;
+}
+
+.pers{
+    display: block;
+    padding-left: 290px;
+    color: aliceblue;
+}
+
+.hp{
+    display: block;
+    padding-left: 290px;
+    color: aliceblue;
+}
+
+.attack{
+    display: block;
+    padding-left: 290px;
+    color: aliceblue;
+}
+.attack_2{
+    display: block;
+    padding-left: 290px;
+    color: aliceblue;
+}
+
+.sig{
+    display: block;
+    padding-left: 290px;
+    color: aliceblue;
+}
+.end{
+    display: block;
+    padding-left: 290px;
+    color: aliceblue;    
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+    transform: scale(0);
+    animation: click-animation 0.5s ease-out;
+}
+
+@keyframes click-animation {
+    50% {
+        transform: scale(1.2);
+        }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+        }
+}
+
+.header{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.legend{
+    width: 170px;
+    height: 170px;
+    border: #bac7ff 1px solid;
+}
+.legend_picture{
+    width: 150px;
+    height: 150px;
+    border:#bac7ff 1px solid;
+    margin: 9px;
+}
+
+.hero_picture:hover{
+    transition:1s;
+    transform: scale(1.05,1.05);
+}
+
+.hero_picture{
+    width: 150px;
+    height:150px;
+}
+.hero_name{
+    font-size: medium;
+    color:aliceblue;
+    left:5px;
+}
+.logo{
+    transition:1s;
+    transform: scale(1.05,1.05);
+}
+.Helloo{
+    color: #282d44;
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.twitter{
+    width: 0.1px;
+    height: 0.1px;
+}
+
+.Helloo:hover{
+    color:rgb(90, 27, 27)
+}
+
+.hero_name:hover{
+    color: rgb(54, 83, 177);
+}
+
+.bh{
+    color: aliceblue;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.photoforbase{
+    height: 850px;
+    width: 1250px;
+    margin-left: 180px;
+}
+.photoforbase2{
+    height: 600px;
+    width: 900px;
+    margin-left: 180px;
+}
+
+.jirk{
+    width:50px;
+    height:50px;
+    margin-left: 100px;
+}
+
+.arcadia{
+    width:700px;
+    height: 932px;
+    margin-left: 880px;
+    margin-bottom: 100px;
+}
+
+h1{
+    color: rgb(36, 54, 136);
+    font-size: 30px;
+    font-family:'Verdana, Geneva, Tahoma, sans-serif';
+    margin-left: 30px;
+}
+
+p{
+    color: aliceblue;
+}
+
+.Bodvar{
+    color: #bac7ff;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Bodvartext{
+    color: #bac7ff;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+blockquote{
+    color: #2a2c33;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bdbk{
+    background-color: #BBB;
+}
+
+.othertext{
+    color: #bac7ff;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.ttt{
+    display: flex;
+}
+
+.bdd{
+    width:700px;
+    height: 932px;
+    margin-left: 500px;
+}
+
+.obratno{
+    color: rgb(206, 203, 27);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.txtbdd{
+    width: 50%;
+}
+.imgbdd{
+    width: 50%;
+}

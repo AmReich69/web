@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+    <title>Website</title>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class = 'Header'>
+            <div class = 'pered'><img id="img1" src="ing/Джиро.webp"></div>
+
+            <div class = 'posle'><a href ='index.html'><img class = 'logo' src ='ing/BRAWLHALLA_LOGO_LOCKUP_COLOR_BIGGER (1).avif'></a>
+           <div class = 'navigate'>
+            <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html">Game</a></li>
+            <li><a href="base.html">Base</a></li>
+            <li><a href="charachters.html">Characters</a></li>
+            </ul>
+            </div>
+            </div>
+
+        </div>
+    <main>
+        <!DOCTYPE html>
+  <style>
+    .image-container img {
+      display: none;
+    }
+  </style>
+    <button class="filter-btn" data-filter="class1">Фильтр для класса 1</button>
+    <button class="filter-btn" data-filter="class2">Фильтр для класса 2</button>
+    <button class="filter-btn" data-filter="class3">Фильтр для класса 3</button>
+    <button id="reset-filter">Сбросить фильтры</button>
+
+    <div class="image-container">
+      <img src="image1.jpg" class="class1" />
+      <img src="image2.jpg" class="class2" />
+      <img src="image3.jpg" class="class1" />
+      <img src="image4.jpg" class="class3" />
+      <!-- и т.д. -->
+    </div>
+    <script>
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const resetFilterBtn = document.getElementById('reset-filter');
+      const images = document.querySelectorAll('.image-container img');
+
+      // Функция для фильтрации изображений
+      function filterImages(filterClass) {
+        images.forEach(img => {
+          if (img.classList.contains(filterClass) || filterClass === 'all') {
+            img.style.display = 'block';
+          } else {
+            img.style.display = 'none';
+          }
+        });
+      }
+
+      // Функция для сброса фильтров
+      function resetFilters() {
+        filterImages('all');
+        filterBtns.forEach(btn => btn.classList.remove('active'));
+      }
+
+      // Обработчик событий для кнопок фильтров
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filterClass = btn.dataset.filter;
+          filterImages(filterClass);
+
+          filterBtns.forEach(btn => btn.classList.remove('active'));
+          btn.classList.add('active');
+        });
+      });
+
+      // Обработчик события для кнопки сброса фильтров
+      resetFilterBtn.addEventListener('click', resetFilters);
+
+      // Изначально показываем все изображения
+      filterImages('all');
+    </script>
+
+        <div class = 'Helloo'><h1><b>Встречайте Легенд:</b></h1></div>
+        <hr>
+
+        <table>
+            <tr>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <a href = 'bodvar.html'><img class = 'hero_picture' src = "ing/bodvar.png"></a>
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Bödvar</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <a href = 'cassidy.html'><img class = 'hero_picture' src = "ing/cassidy.png"></a>
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Cassidy</p>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/orion.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Orion</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_VraxxM-1.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Lord Vraxx</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/gnash.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Gnash</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/nai.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Queen Nai</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/hattori.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Hattori</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/roland.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Sir Roland</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/scarlet.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Scarlet</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/thatch.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Thatch</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/ada.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Ada</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/sentinel.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Sentinel</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/lucien.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Lucien</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/teros.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Teros</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_ValkyrieM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Brynn</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_CatM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Asuri</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_ApocM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Barraza</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_ElfM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Ember</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_AzothM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Azoth</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_SamuraiM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Koji</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_DwarfM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Ulgrim</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_MonsterHunterM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Diana</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_BarbarianM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Jhala</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_GolemM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Kor</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_MonkM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Wu Shang</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_ValM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Val</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_DragonM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Ragnair</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_CrossM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Cross</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_AssassinM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Mirage</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_ReaperM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Nix</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_WerewolfM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Mordex</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_KitsuneM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Yumiko</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_SpaceHunterM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Artemis</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_ThiefM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Caspian</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_CorsairM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Sidra</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_BruteM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Xull</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_InuitM-1.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Kaya</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_SoldierM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Isaiah</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_ShinobiM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Jiro</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_WuxiaM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Lin Fei</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_CelestialM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Zariel</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_RaymanM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Rayman</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_ElfwarM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Dusk</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_SpellwitchM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Fait</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_ThorM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Thor</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_RagefighterM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Petra</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_ActualRobotM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Vector</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_GargoyleM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Onyx</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_SellswordM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Jaeyun</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_ActualSharkM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Mako</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_GhostArmorM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Magyar</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_BountyHunterM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Reno</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_BirdBardM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Munin</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_FairyQueenM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Arcadia</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_EzioM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Ezio</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_VampLordM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Volkov</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_LuchadorM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Tezca</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_SpeedsterM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Thea</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/a_Roster_Pose_SentaiM.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Red Raptor</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/Loki_icon-1.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Loki</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/roboengineer-rostericon.png">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Seven</p>
+                    </div>
+                </td>
+                <td>
+                    <div class = 'legend'>
+                        <div class ='legend_picture'>
+                            <img class = 'hero_picture' src = "ing/Vivilegendpage.jpg">
+                        </div>
+                    </div>
+                    <div class = 'hero_name'>
+                    <p>Vivi</p>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+        <hr>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script src="scrypt.js"></script>
+    </body>
